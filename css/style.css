@@ -1,0 +1,233 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Evita que o padding e a border aumentem o tamanho do elemento */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f9;
+    color: #1d1148;
+    font-size: 14px;
+}
+
+.container { /* Limita a largura do conteúdo e centraliza */
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    padding: 18px 0; /* Espaçamento interno do cabeçalho */
+}
+
+nav {
+    display: flex;/* Exibe o logo e o menu em linha */
+    justify-content: space-between;/* Espaço entre o logo e o menu */
+    align-items: center;
+}
+
+.logo {
+    color: #1d1148;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span { /* Destaque da palavra Amigas no logo */
+    color: #e40084;
+}
+
+.menu {
+    display: flex;/* Exibe os itens do menu em linha */
+    list-style: none; /* Remove os marcadores da lista */
+    gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1d1148;
+
+}
+
+
+
+/* Secção principal */
+.hero {
+    background-color: #1d1148;
+    color: white;
+    text-align: center;
+    padding: 55px 15px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;/* Permite definir largura e altura */
+    background-color: #e40084;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #b8006a;
+}
+
+/* Conteúdo */
+.conteudo {
+    padding-top: 38px;
+    padding-bottom: 50px;
+}
+
+section {
+    margin-bottom: 40px;
+    /*border-bottom: 50px solid #e40084;*/
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Cartões dos animais */
+.animais {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cartao {
+    width: 300px;
+    border: 2px solid #1d1148;
+    border-radius: 17px;
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.12);
+}
+
+.cartao img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    /*background-color: #fce9f4;*/
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.cartao h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.cartao p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.novo {
+    position: absolute;
+    top: 25px;
+    right: 23px;
+    background-color: #e40084;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 11px;
+}
+
+/* Como adotar */
+ol {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+/* Tabela de horários */
+table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #20144b;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #20144b;
+}
+
+/* Formulário */
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+button {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #e40084;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b8006a;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1d1148;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 16px;
+}
+
+
